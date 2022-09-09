@@ -11,6 +11,7 @@
         <module>shop-product</module>
         <module>shop-order</module>
         <module>shop-common</module>
+        <module>api-gateway</module>
     </modules>
     <name>feilis_cloud</name>
     <description>feilis_cloud</description>

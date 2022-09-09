@@ -6,8 +6,7 @@ import com.feilis.cloud.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * @Description: TODO

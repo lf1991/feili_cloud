@@ -10,41 +10,41 @@ import java.io.Serializable;
 public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Integer pId;
-    private String pName;
-    private Double pPrice;
-    private Integer pStock;
+    private Integer productId;
+    private String productName;
+    private Double productPrice;
+    private Integer productStock;
 
-    public Integer getpId() {
-        return pId;
+    public Integer getProductId() {
+        return productId;
     }
 
-    public void setpId(Integer pId) {
-        this.pId = pId;
+    public void setProductId(Integer productId) {
+        this.productId = productId;
     }
 
-    public String getpName() {
-        return pName;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setpName(String pName) {
-        this.pName = pName;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public Double getpPrice() {
-        return pPrice;
+    public Double getProductPrice() {
+        return productPrice;
     }
 
-    public void setpPrice(Double pPrice) {
-        this.pPrice = pPrice;
+    public void setProductPrice(Double productPrice) {
+        this.productPrice = productPrice;
     }
 
-    public Integer getpStock() {
-        return pStock;
+    public Integer getProductStock() {
+        return productStock;
     }
 
-    public void setpStock(Integer pStock) {
-        this.pStock = pStock;
+    public void setProductStock(Integer productStock) {
+        this.productStock = productStock;
     }
 
 

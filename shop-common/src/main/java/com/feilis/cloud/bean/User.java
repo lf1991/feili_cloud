@@ -8,42 +8,40 @@ package com.feilis.cloud.bean;
 public class User {
     private static final long serialVersionUID = 1L;
 
-    private Integer uId;
-    private String uName;
-    private String uPassword;
-    private String uTelphone;
+    private Integer userId;
+    private String userName;
+    private String password;
+    private String telphone;
 
-    public Integer getuId() {
-        return uId;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setuId(Integer uId) {
-        this.uId = uId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getuName() {
-        return uName;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setuName(String uName) {
-        this.uName = uName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getuPassword() {
-        return uPassword;
+    public String getPassword() {
+        return password;
     }
 
-    public void setuPassword(String uPassword) {
-        this.uPassword = uPassword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getuTelphone() {
-        return uTelphone;
+    public String getTelphone() {
+        return telphone;
     }
 
-    public void setuTelphone(String uTelphone) {
-        this.uTelphone = uTelphone;
+    public void setTelphone(String telphone) {
+        this.telphone = telphone;
     }
-
-
 }

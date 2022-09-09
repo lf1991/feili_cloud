@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feilis.cloud.dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.feilis.cloud.bean.User">
+        <result column="u_id" jdbcType="INTEGER" property="userId"/>
+        <result column="u_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="u_password" jdbcType="VARCHAR" property="password"/>
+        <result column="u_telphone" jdbcType="VARCHAR" property="telphone"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        u_id
+        ,u_name,u_password,u_telphone
+    </sql>
+
+    <select id="getUserById" resultMap="BaseResultMap" parameterType="INTEGER">
+        select
+        <include refid="Base_Column_List"></include>
+        from p_user
+        where u_id= #{uId}
+    </select>
+
+</mapper>

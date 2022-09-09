@@ -10,71 +10,68 @@ import java.io.Serializable;
 public class Order implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long oId;
+    private Integer orderId;
+    private Integer userId;
+    private String userName;
+    private Integer productId;
+    private String productName;
+    private Double productPrice;
+    private Integer orderStock;
 
-    private Integer uId;
-    private String uName;
-
-    private Integer pId;
-    private String pName;
-    private Double pPrice;
-
-    private Integer pStock;
-
-    public Long getoId() {
-        return oId;
+    public Integer getOrderId() {
+        return orderId;
     }
 
-    public void setoId(Long oId) {
-        this.oId = oId;
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
     }
 
-    public Integer getuId() {
-        return uId;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setuId(Integer uId) {
-        this.uId = uId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getuName() {
-        return uName;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setuName(String uName) {
-        this.uName = uName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public Integer getpId() {
-        return pId;
+    public Integer getProductId() {
+        return productId;
     }
 
-    public void setpId(Integer pId) {
-        this.pId = pId;
+    public void setProductId(Integer productId) {
+        this.productId = productId;
     }
 
-    public String getpName() {
-        return pName;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setpName(String pName) {
-        this.pName = pName;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public Double getpPrice() {
-        return pPrice;
+    public Double getProductPrice() {
+        return productPrice;
     }
 
-    public void setpPrice(Double pPrice) {
-        this.pPrice = pPrice;
+    public void setProductPrice(Double productPrice) {
+        this.productPrice = productPrice;
     }
 
-    public Integer getpStock() {
-        return pStock;
+    public Integer getOrderStock() {
+        return orderStock;
     }
 
-    public void setpStock(Integer pStock) {
-        this.pStock = pStock;
+    public void setOrderStock(Integer orderStock) {
+        this.orderStock = orderStock;
     }
 
 

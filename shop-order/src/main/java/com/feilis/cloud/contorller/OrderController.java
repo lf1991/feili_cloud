@@ -25,8 +25,8 @@ public class OrderController {
      * @description: 购买商品
      * @author feilis
      * @Date 2022/9/8 1:36
-     * @Param
-     * @Return
+     * @Param pid type {Integer}
+     * @Return order {Order}
      */
     @GetMapping("/prod/{pid}")
     public Order prod(@PathVariable("pid") Integer pid) {
