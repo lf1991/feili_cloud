@@ -1,0 +1,16 @@
+server:
+  port: 7000
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        ip: 192.168.0.181
+        enabled: true
+        server-addr: localhost:8848
+
+

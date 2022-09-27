@@ -7,12 +7,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @Description: TODO
  * @Author feilis
- * @Date 2022/9/9 11:47
+ * @Date 2022/9/21 23:47
  */
+
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ApiGateWayApplication {
+public class CloudGateWayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ApiGateWayApplication.class, args);
+        SpringApplication.run(CloudGateWayApplication.class, args);
     }
 }

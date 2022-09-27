@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -19,6 +20,7 @@ import org.springframework.web.servlet.DispatcherServlet;
  */
 
 @Service
+
 public class OrderServiceImpl implements OrderService {
 
     @Autowired
@@ -29,6 +31,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Mapper
     private OrderDao orderDao;
+
 
     @Override
     public Order prod(Integer pId) {

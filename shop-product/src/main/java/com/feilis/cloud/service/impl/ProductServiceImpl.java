@@ -4,6 +4,7 @@ import com.feilis.cloud.bean.Product;
 import com.feilis.cloud.dao.ProductDao;
 import com.feilis.cloud.service.ProductService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
